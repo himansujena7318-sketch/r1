@@ -14,3 +14,6 @@ git->
     2.SSH(is advanced present )
 
     git remote -v ->List all the remotes which you have configured
+
+    git push -u origin |git push --set upstream origin main ->
+    1 branch-> if you are pushing  the codefor the first time ->you need to set this upstream ->
