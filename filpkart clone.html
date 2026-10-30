@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img-container{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        
+            margin: 10px;
+            padding: 5px;
+            width: 100%;
+        }
+        .img-logo{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: yellow;
+            border: 2px solid white;
+            border-radius: 10px;
+           
+            margin: 10px;
+            padding: 10px;
+            
+        }
+        .logo-icon{
+            width: 24px;
+            height: auto;
+        }
+        .logo-text{
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+        }
+       .trv-logo{
+           display: flex;
+            align-items: center;
+            background-color:whitesmoke;
+            border: 2px solid white;
+            border-radius: 10px;
+            max-width: 120px;
+            margin: 10px;
+            padding: 1px;
+       }
+
+    .trv-icon{
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+       }
+       trv-txt{
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+       }
+       .location-icon{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 10px;
+       margin-left: 800px;
+        width: 30px;
+       }
+       .address{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top:-25px;
+        margin-left: 830px;
+       }
+       .symbol{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top:-15px;
+        margin-left: 1100px;
+        size: 50px;
+       }
+    
+       
+       .grocery-logo{
+          display: flex;
+            align-items: center;
+            background-color:whitesmoke;
+            border: 2px solid white;
+            border-radius: 10px;
+            max-width: 120px;
+            margin: 10px;
+            padding: 5px;
+
+       }
+       .grocery-icon{
+         display: flex;
+         gap: 20px;
+         align-items: center;
+         margin-top: 10px;
+       
+        width: 30px;
+       }
+       .grocery-txt{
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+       }
+       .SearchM{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+       }
+       .search{
+        display: flex;
+        align-items: center;
+        width:1000px;
+        padding: 5px;
+        border-radius: 10px;
+        border: 3px solid skyblue;
+        margin-left: 20px;
+       }
+       .Login-logo{
+        display: flex;
+            align-items: center;
+           
+            
+            
+    
+            margin: 10px;
+            padding: 5px;
+            margin-left: 50px;
+       }
+       .Login-icon{
+          display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 3px;
+       }
+       .Login-txt{
+        padding: 3px;
+        margin-top: 10px;
+        margin-left: 4px;
+       }
+       .menu{
+        margin-top: 13px;
+        margin-left: 7px;
+       }
+       .nice{
+        margin-top: 13px;
+        margin-left: 7px;
+       }
+       .More.txt{
+         padding: 3px;
+        margin-top: 10px;
+        margin-left: 4px;
+       }
+       .cart-logo{
+        margin-top: 10px;
+        margin-left: 7px;
+
+       }
+      .txt{
+        cursor: pointer;
+          margin-left: 10px;
+          margin-top: 1px;
+       }
+       .look{
+        text-decoration: underline;
+        border-bottom: 0.5px solid gray;
+        padding-bottom: 2px;
+       }
+        .category{
+         display: flex;
+         align-items: center;
+         flex-direction: row;
+         gap: 35px;
+        }
+       
+       .log{
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+
+       }
+
+       .fashion{
+         margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+       }
+       
+       .ece{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+             align-items: center;
+       }
+       .beauty{
+             margin: 10px;
+            display: flex;
+            flex-direction: column;
+             align-items: center;
+       }
+       .mob{
+             margin: 10px;
+            display: flex;
+            flex-direction: column;
+             align-items: center;
+       }
+       .app{
+             margin: 10px;
+            display: flex;
+            flex-direction: column;
+             align-items: center;
+       }
+       .lok{
+        height: 300px;
+        width:600px;
+        margin-top: 30px;
+        border-radius: 20px;
+       }
+       .image{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+       }
+
+
+       .nxt{
+        margin-top: 50px;
+        border-radius: 30px;
+        height: 300px;
+        width: 1500px;
+       }
+       .mid{
+        position: relative;
+       width: 100%;
+       display: block;
+       height: 400px;
+       border-radius: 40px;
+       }
+       .no{
+        position: absolute;
+       top: 0;
+       left: 10px;
+        z-index: 10;
+        height: 300px;
+        width: 200px;
+       }
+       container{
+        position: relative;
+        width: 100%;
+       }
+       .sug{
+        margin-top: 20px;
+        margin-left: 20px;
+        font: bold;
+        font-size: 20px;
+       }
+       .tx{
+        display: flex;
+        
+        flex-direction: column;
+        margin-top: 5px;
+        margin-left: 40px;
+       }
+       .ml{
+        height: 400px;
+        width: 400px;
+       }
+     .shop-container{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+     }
+     .ml{
+        height: 300px;
+        width: 300px;
+     }
+        .nj{
+            height: 300px;
+            width: 300px;
+        
+     }
+     .vb{
+        height: 320px;
+        width: 320px;
+     }
+     .zx{
+        height: 300px;
+        width: 300px;
+     }
+
+     .fg{
+        height :300px;
+        width: 300px;
+     }
+     .rt{
+        margin-left: 20px;
+     }
+     .we{
+        margin-left: 20px;
+        color: skyblue;
+     }
+     .gh{
+        font-size: 25px;
+     }
+        .az{
+            height: 200px;
+            width: 300px;
+            margin-left: 10px;
+        }
+
+     .df{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 20px;
+        
+     }
+     .ko{
+        margin-top: 50px;
+        border-radius: 30px;
+        height: 300px;
+        width: 1510px;
+     }
+
+
+     .li-container{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+     }
+     .hu{
+        height: 200px;
+        width: 300px;
+        margin-top: 20px;
+     }
+
+
+     .bn{
+         margin-top: 50px;
+        border-radius: 30px;
+        height: 300px;
+        width: 1510px;
+     }
+     .aq{
+         margin-top: 30px;
+        margin-left: 20px;
+        font: bold;
+        font-size: 30px;
+     }
+
+
+
+     .cx-container{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+     }
+
+     .cx{
+        height: 400px;
+        width: 300px;
+     }
+
+
+     .sd-container{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+     }
+     .sd{
+        height: 380px;
+        width: 400px;
+     }
+     .sdn{
+        height: 450px;
+        width: 400px;
+     }
+     .iok{
+        height: 350px;
+        width: 100%;
+        background-color: rgb(48, 47, 47);
+        position: relative;
+     }
+     .po{
+        position: absolute;
+        left: 100px;
+        margin-top: 50px;
+     }
+     .li{
+        position: absolute;
+        left:80px;
+        margin-top: 70px;
+        color: white;
+     }
+     .ki{
+          position: absolute;
+        left: 300px;
+        margin-top: 50px;
+     }
+     .ji{
+         position: absolute;
+        left:300px;
+        margin-top: 70px;
+        color: white
+     }
+     .ni{
+             position: absolute;
+        left: 540px;
+        margin-top: 50px;
+     
+     }
+     .hi{
+           position: absolute;
+        left:500px;
+        margin-top: 70px;
+        color: white
+     }
+
+.pl{
+      position: absolute;
+        left: 740px;
+        margin-top: 50px;
+}
+ .ul{
+      position: absolute;
+        left:700px;
+        margin-top: 70px;
+        color: white
+ }    
+
+ .op{
+    position: absolute;
+        left: 1140px;
+        margin-top: 50px;
+ }
+
+
+ .ok{
+    position: absolute;
+        left:1100px;
+        margin-top: 70px;
+        color: white
+ }    
+ 
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="img-container">
+        <div class="img-logo">
+         <img src="https://rukminim2.flixcart.com/fk-p-flap/52/44/image/d2ecfddf891a3922.png?q=60"class="logo-icon" alt="">
+           
+            <span>Filpkart</span>
+        </div>
+        <div class="trv-logo ">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/58/44/image/7ab4040af860941d.png?q=60" class="trv-icon" alt="">
+            <span class="trv-txt">Travel</span>
+        </div>
+          <div class="grocery-logo">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/56/44/image/2545bc4517298b90.png?q=60" class="grocery-icon" alt="">
+       <span class="grocery-txt">Grocery</span>
+    </div>
+    <div>
+        <img src="https://img.magnific.com/premium-vector/location-map-pin-icon-symbol_136875-7521.jpg?semt=ais_hybrid&w=740&q=80" class="location-icon" alt="">
+        <span class="address">College square,aska,ganjam</span>
+    
+
+        <span class="symbol">> </span>
+
+    </div>
+    </div>
+
+
+
+    <div class="SearchM">
+        <div class="search">
+            <input type="text" placeholder="🔍 Search for products,brands and More" style="border:none;outline: none;background: transparent;width: 100%;padding: 5px;">
+        </div>
+        
+        
+        <div class="Login-logo">
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-6bae67.svg" class="Login-icon" alt="">
+            <span class="Login-txt">Login</span>
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K" class="menu" alt="">
+        </div>
+        <div>
+            <span class="More.txt">More</span>
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K" class="nice" alt="">
+        </div>
+        <div>
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart_v4-6ac9a8.svg" class="cart-logo" alt="">
+            <span class="txt">Cart</span>
+        </div>
+    </div>
+    <div class="look"></div>
+    <div class="category">
+        <div>
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/all.svg" class="log" alt="For You">
+            <span class="fo">For you</span>
+        </div>
+        <div>
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/fashion.svg" class="fashion" alt="Fashion">
+            <span>Fashion</span>
+        </div>
+        <div>
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/mobiles.svg" class="mob" alt="Mobiles">
+            <span>Mobiles</span>
+        </div>
+        <div>
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/electronics.svg" class="ece" alt="Electronics">
+            <span>Electronics</span>
+        </div>
+        <div >
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/beauty.svg" class="beauty" alt="">
+            <span>Beauty</span>
+        </div>
+        <div>
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/home-final.svg" class="home" alt="">
+            <span>Home</span>
+        </div>
+        <div>
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/tv.svg" class="app" alt="">
+            <span>Appliances</span>
+        </div>
+        <div>
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/toy.svg" class="app" alt="">
+            <span>Toys and ba...</span>
+        </div>
+        <div>
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/food.svg" class="app" alt="">
+            <span>Food and He...</span>
+        </div>
+        <div>
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/auto-acc.svg" class="app" alt="">
+            <span>Auto Acc...</span>
+        </div>
+        <div>
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/sport.svg" class="app" alt="">
+            <span>sports&...</span>
+        </div>
+        <div>
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/furniture.svg" class="app" alt="">
+            <span>Furniture</span>
+
+        </div>
+        <div>
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/books.svg" class="app" alt="">
+            <span>Book</span>
+        </div>
+        <div>
+            <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/auto-new.svg" class="app" alt="">
+            <span> 2 wheele...</span>
+        </div>
+
+    </div>
+    <div class="look"></div>
+    <div class="image">
+    <div>
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/ad7a6be2a492c1a7.jpg?q=60" class="lok" alt="">
+    </div>
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/4f53587e9ba5c363.png?q=60" class="lok" alt="">
+        </div>
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/b115502a06ebee77.png?q=60" class="lok" alt="">
+        </div>
+    </div>
+
+
+    <div class="container">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/3140/700/image/ac7c0da533bb506b.png?q=60" class="nxt" alt="">
+    </div>
+    <div>
+        <div>
+            <span class="sug">Suggested For You</span>
+            
+        <span>
+
+            ➡️
+        </span>
+        </div>
+        <div class="shop-container">
+
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn4cp2sFzlIy7VyRdYC3hTgxkfmBoMpUmaPEAHfLNeuw&s=10" class="ml" alt="">
+                <span class="tx">Apple i phone18 pro(white)</span>
+                <span class="rt">💲~1,32,000</span>
+                <span class="we">1,20,000 with bank offer</span>
+            </div>
+            <div><img src="https://cdn1.smartprix.com/rx-ibaT4ABZJ-w420-h420/samsung-galaxy-s26-u.webp" class="nj" alt="">
+                 <span class="tx">Samsung galaxy S26 ultra</span>
+                 <span class="rt"> 💲1,56,000</span>
+                 <span class="we">1,50,000 with bank offer</span>
+            </div>
+
+            <div>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI8bXitbuxeprRa6oFcVeG3P49yHIv0AHl2z0POC_pYg&s=10"class="vb" alt="">
+                 <span class="tx">Vivo t4 ultra</span>
+                 <span class="rt">💲28,000</span>
+                 <span class="we">25,000 with bank offer</span>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2qstEit4VghmV6BO5hddQFKzbwCU5sPc7TjjKxMeqPQ&s" class="zx" alt="">
+                 <span class="tx">Bolt EVo</span>
+                 <span class="rt">💲30,000</span>
+                 <span class="we">29,000 with bank offer</span>
+                 
+
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzR7vPPCQTgXx5SDLPBISHd0oHO4xWKUzKYcpjg7KGzw&s=10" class="fg" alt="">
+                 <span class="tx">IQ00 Z10</span>
+                 <span class="rt">💲26,000</span>
+                 <span class="we">24,000 with bank offer</span>
+            </div>
+        </div>
+        <div class="gh">In The Spotlight</div>
+
+        <div class="df">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/700/500/image/9364ee9473ced803.png?q=60" class="az" alt="">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/700/500/image/101027b15169dfab.png?q=60" class="az" alt="">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/700/500/image/357a1ae0c5057f81.png?q=60" class="az" alt="">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/700/500/image/3984bd4cf4c6ca0a.png?q=60" class="az" alt="">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/700/500/image/5174dcb4fb98ceb3.png?q=60" class="az" alt="">
+        </div>
+        <div class="ko">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/3140/700/image/665bc8a832d3f3e6.jpg?q=60" class="ko" alt="">
+        </div>
+
+        <div class="li-container">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/1700/image/3b06af1bbf2d6b7f.png?q=60" class="hu" alt="">
+
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/1700/image/46826da66a7162f0.png?q=60" class="hu" alt="">
+
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/1700/image/e2db5fd9d3e9a12c.png?q=60" class="hu" alt="">
+
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/2140/image/13e0184c6f2148ee.png?q=60" class="hu" alt="">
+
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/2140/image/a72d1122e54e8ec3.png?q=60" class="hu" alt="">
+        </div>
+
+
+        <div>
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/3140/700/image/d91b6349dc444366.png?q=60" class="bn" alt="">
+        </div>
+
+        <div>
+            <span class="aq"> New on Filpkart </span>
+        </div>
+
+
+        <div class="cx-container">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/700/1060/image/fc78a94616d91b1c.png?q=60" class="cx" alt="">
+
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/700/1060/image/884ed381758838c3.png?q=60" class="cx" alt="">
+
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/700/1060/image/21616db1e62a8fb8.png?q=60" class="cx" alt="">
+
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/700/1060/image/a59ddbb36f798997.png?q=60" class="cx" alt="">
+
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/700/1060/image/fa6c33495b81c6a4.png?q=60" class="cx" alt="">
+        </div>
+
+
+        <div class="sd-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAid66EUMmWYg65GSTwM33XryxTcYf5Pkv01cdDh0shQ&s=10" class="sd" alt="">
+          
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuNUsN5tx04k0OyCYM2F4saKBDS4w0A80nUKS7Ud3Pow&s" class="sdn" alt="">
+           
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8tjcyDClFM-80D_VmbQ1L8pU0l8L9Og_JWpb635SD5xWUMNc38YH1QXQh&s=10" class="sdn" alt="">
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzsi-VLDG-DhrNaGc30CRxVDOZdnAlUdBYtp-eHT2ceg&s=10" class="sd" alt="">
+
+        </div>
+
+
+
+        <footer class="iok">
+           
+
+            <div class="po"> ABOUT</div>
+               <ul class="li">
+                <li>contact us</li>
+                <li>about us</li>
+                <li>careers</li>
+                <li>Filpkart stories</li>
+                <li>press</li>
+                <li>corporate imformation</li>
+               </ul>
+
+               <div class="ki">Group companies</div>
+               <ul class="ji">
+
+                   <li>Myntra</li>
+                   <li>Cleartrip</li>
+                   <li>shopsy</li>
+                </ul>
+
+
+                 <div class="ni">HELP</div>
+               <ul class="hi">
+                   <li>Payments</li>
+                   <li>Shipping</li>
+                   <li>Cancellations & Returns</li>
+                   <li>FAQ</li>
+                </ul>
+        
+
+
+                
+                 <div class="pl">Consumer policy</div>
+               <ul class="ul">
+                   <li>Cancellations & Returns</li>
+                   <li>Terms of use </li>
+                   <li>Security</li>
+                   <li>Privacy</li>
+                   <li>Site map</li>
+                   <li>Grievance Redressal</li>
+                   <li>Epr complimancy</li>
+                   <li>Fssai food safty Connect app</li>
+                </ul>
+
+
+
+
+                <div class="op">
+                    mail Us
+                </div>
+                <div class="ok">
+                    <span>Flipkart Internet Private Limited,</span>
+                    <span>Buildings Alyssa, Begonia</span>
+                    <span> Clove Embassy Tech Village,</span>
+                    <span>e, Outer Ring Road, Devarabeesanahalli Village, </span>
+                    <span>Bengaluru, 560103, Karnataka, India</span>
+                    <span>, 560103, Karnataka</span>
+                </div>
+        
+        </footer>

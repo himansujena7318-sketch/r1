@@ -1,0 +1,16 @@
+git->
+    1.versoning
+    2.collabration multiple ->
+
+    git and git hub thease are two different things->
+
+    organisation->under->repositiers( a codebase)
+
+
+    How do i(local nj)-> connect to a remote repositiers->
+    git connection can be  establised in 2 ways  ->
+
+    1.https(is present all your set up)
+    2.SSH(is advanced present )
+
+    git remote -v ->List all the remotes which you have configured
